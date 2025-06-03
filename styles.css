@@ -1,14 +1,12 @@
-/* Theme colors based on Dracula — https://draculatheme.com — MIT License */
 :root {
-  --bg: #282a36;
-  --fg: #f8f8f2;
+  --bg: #282828;
+  --fg: #f8f8f8;
   --accent: #44475a;
   --red: #ff5555;
   --orange: #ffb86c;
   --yellow: #f1fa8c;
   --green: #50fa7b;
-  --cyan: #8be9fd;
-  --blue: #6272a4;
+  --blue: #2eaff5;
   --purple: #bd93f9;
   --pink: #ff79c6;
 }
@@ -24,24 +22,20 @@ body {
 }
 
 a {
+  color: var(--fg);
   text-decoration: none;
+}
+
+.navbar {
+  margin: 0 auto 4rem;
+  padding: 0 10px;
+  max-width: 768px;
 }
 
 .container {
   margin: 0 auto 8rem;
   padding: 0 10px;
-}
-
-@media (min-width: 768px) {
-    .container {
-        width: 60%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 40%;
-    }
+  max-width: 768px;
 }
 
 .red {
@@ -81,16 +75,6 @@ a {
 
 .green:hover {
   background-color: var(--green);
-  color: var(--bg);
-}
-
-.cyan {
-  background-color: var(--bg);
-  color: var(--cyan);
-}
-
-.cyan:hover {
-  background-color: var(--cyan);
   color: var(--bg);
 }
 

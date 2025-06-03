@@ -10,9 +10,18 @@
 </head>
 
 <body>
+  <div id="navbar"></div>
+  <script>
+  fetch('nav.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+  </script>
+
   <div class="container">
-    <p>The quick brown fox <a href="/" class="green">[jumped]</a> over the lazy dog.</p>
-    <p lang="ja">これは<a href="/" class="red">[日本語]</a>のテキストです。</p>
+    <p>The quick brown fox <a href="/" class="blue">[jumped]</a> over the lazy dog.</p>
+    <p lang="ja">これは<a href="/" class="orange">[日本語]</a>のテキストです。</p>
   </div>
 </body>
 </html>
