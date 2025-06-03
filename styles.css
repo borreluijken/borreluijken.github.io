@@ -1,7 +1,6 @@
 :root {
-  --bg: #282828;
+  --bg: #181818;
   --fg: #f8f8f8;
-  --accent: #44475a;
   --red: #ff5555;
   --orange: #ffb86c;
   --yellow: #f1fa8c;
@@ -9,6 +8,7 @@
   --blue: #2eaff5;
   --purple: #bd93f9;
   --pink: #ff79c6;
+  --grey: #888888;
 }
 
 body {
@@ -24,6 +24,23 @@ body {
 a {
   color: var(--fg);
   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  background-color: var(--bg);
+  color: var(--grey);
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  margin-left: 0;
+  padding-top: 1.5rem;
+}
+
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  transform: translateX(-1.5em);
 }
 
 .navbar {
@@ -105,5 +122,15 @@ a {
 
 .pink:hover {
   background-color: var(--pink);
+  color: var(--bg);
+}
+
+.grey {
+  background-color: var(--bg);
+  color: var(--grey);
+}
+
+.grey:hover {
+  background-color: var(--grey);
   color: var(--bg);
 }
