@@ -26,7 +26,17 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  background-color: var(--bg);
+  color: var(--grey);
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  margin-left: 0;
+  padding-top: 4rem;
+}
+
+h2 {
   background-color: var(--bg);
   color: var(--grey);
   font-size: 1.5rem;
@@ -36,11 +46,16 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 1.5rem;
 }
 
-h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+h1::before, h2::before {
   content: '>';
   position: absolute;
   left: 0;
   transform: translateX(-1.5em);
+}
+
+.navlink {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .navbar {
