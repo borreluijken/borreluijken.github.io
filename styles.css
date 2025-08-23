@@ -29,12 +29,6 @@ a {
   color: var(--cyan);
 }
 
-a:hover {
-  background-color: var(--cyan);
-  color: var(--bg);
-  text-decoration: none;
-}
-
 .container {
   margin: 0 auto 8rem;
   padding: 0 10px;
@@ -68,7 +62,8 @@ a:hover {
 .purple     { color: var(--purple); }
 .pink       { color: var(--pink); }
 
-.indent4    { display: inline-block; width: 4ch; }
-.indent8    { display: inline-block; width: 8ch; }
-.indent12   { display: inline-block; width: 12ch; }
-.indent16   { display: inline-block; width: 16ch; }
+a.yellow:hover {
+  background-color: var(--yellow);
+  color: var(--bg);
+  text-decoration: none;
+}
