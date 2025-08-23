@@ -50,6 +50,10 @@ a {
   text-align: right;
 }
 
+.line:hover {
+    background-color: var(--selection);
+}
+
 .bg         { color: var(--bg); }
 .selection  { color: var(--selection); }
 .fg         { color: var(--fg); }
