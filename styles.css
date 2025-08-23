@@ -35,34 +35,40 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2 {
-  background-color: var(--bg);
-  color: var(--pink);
-  font-weight: bold;
-  position: relative;
-  margin-left: 0;
-}
-
-h1 {
-  font-size: 2rem;
-  padding-top: 4rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-  padding-top: 1.5rem;
-}
-
 .container {
   margin: 0 auto 8rem;
   padding: 0 10px;
   max-width: 768px;
+  counter-reset: line;
 }
 
-li {
-  margin-bottom: 8px;
+.line {
+  display: block;
+  counter-increment: line;
 }
 
-li:last-child {
-  margin-bottom: 0;
+.line::before {
+  content: counter(line);
+  display: inline-block;
+  width: 4ch;
+  margin-right: 4ch;
+  color: var(--comment);
+  text-align: right;
 }
+
+.bg         { color: var(--bg); }
+.selection  { color: var(--selection); }
+.fg         { color: var(--fg); }
+.comment    { color: var(--comment); }
+.red        { color: var(--red); }
+.orange     { color: var(--orange); }
+.yellow     { color: var(--yellow); }
+.green      { color: var(--green); }
+.cyan       { color: var(--cyan); }
+.purple     { color: var(--purple); }
+.pink       { color: var(--pink); }
+
+.indent4    { display: inline-block; width: 4ch; }
+.indent8    { display: inline-block; width: 8ch; }
+.indent12   { display: inline-block; width: 12ch; }
+.indent16   { display: inline-block; width: 16ch; }
