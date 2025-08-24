@@ -25,7 +25,7 @@ p {
 }
 
 .container {
-  margin: 0;
+  margin: 1ch auto;
   padding: 0 10px;
   max-width: 768px;
   counter-reset: line;
