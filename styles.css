@@ -25,7 +25,7 @@ p {
 }
 
 .container {
-  margin: 0 auto 8rem;
+  margin: 0;
   padding: 0 10px;
   max-width: 768px;
   counter-reset: line;
@@ -60,6 +60,17 @@ p {
 .cyan       { color: var(--cyan); }
 .purple     { color: var(--purple); }
 .pink       { color: var(--pink); }
+
+a {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+a:hover {
+  background-color: var(--fg);
+  color: var(--bg);
+  text-decoration: none;
+}
 
 a.yellow {
   color: var(--yellow);
