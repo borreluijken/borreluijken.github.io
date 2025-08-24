@@ -11,31 +11,36 @@
 
 <body>
   <div class="container">
-    <span class="line"><span class="pink">struct</span> <span class="cyan">Borre</span> {</span>
-    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;email<span class="pink">:</span> <a href="mailto:borre@luijken.com" class="yellow">"my email"</a>,</span>
-    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;github<span class="pink">:</span> <a href="https://github.com/borreluijken" class="yellow">"my Github"</a>,</span>
-    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;linkedin<span class="pink">:</span> <a href="https://www.linkedin.com/in/borreluijken/" class="yellow">"my LinkedIn"</a>,</span>
-    <span class="line">}</span>
+    <a href="mailto:borre@luijken.com" class="cyan">"Email"</a>
+    <a href="https://github.com/borreluijken" class="cyan">"Github"</a>
+    <a href="https://www.linkedin.com/in/borreluijken/" class="cyan">"LinkedIn"</a>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <span class="line"><span class="pink">class</span> <span class="cyan">PythonResources</span>():</span>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">def</span> <span class="purple">__init__</span>(<span class="purple">self</span>):</span>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Learning</span></span>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple">self</span>.learn_python <span class="pink">=</span> <a href="https://automatetheboringstuff.com/3e/" class="yellow">"Automate the Boring Stuff with Python"</a></span>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple">self</span>.learn_django <span class="pink">=</span> <a href="https://docs.djangoproject.com/en/4.2/intro/tutorial01/" class="yellow">"Django tutorial"</a></span>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple">self</span>.learn_postgres <span class="pink">=</span> <a href="https://neon.com/postgresql/tutorial" class="yellow">"PostgreSQL Tutorial"</a></span>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple">self</span>.learn_docker <span class="pink">=</span> <a href="https://docs.docker.com/get-started/introduction/" class="yellow">"Docker Introduction"</a></span>
     <span class="line">&nbsp;</span>
-    <span class="line"><span class="pink">struct</span> <span class="cyan">Resources</span> {</span>
-    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Python</span></span>
-    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;docs_python<span class="pink">:</span> <a href="https://docs.python.org/3/library/index.html" class="yellow">"The Python Standard Library"</a>,</span>
-    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;docs_matplotlib<span class="pink">:</span> <a href="https://matplotlib.org/stable/index.html" class="yellow">"MatPlotLib documentation"</a>,</span>
-    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;docs_numpy<span class="pink">:</span> <a href="https://numpy.org/doc/2.3/" class="yellow">"NumPy documentation"</a>,</span>
-    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;docs_torch<span class="pink">:</span> <a href="https://docs.pytorch.org/docs/stable/index.html" class="yellow">"PyTorch documentation"</a>,</span>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Documentation</span></span>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple">self</span>.docs_python <span class="pink">=</span> <a href="https://docs.python.org/3/library/index.html" class="yellow">"The Python Standard Library"</a></span>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple">self</span>.docs_matplotlib <span class="pink">=</span> <a href="https://matplotlib.org/stable/index.html" class="yellow">"MatPlotLib documentation"</a></span>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple">self</span>.docs_numpy <span class="pink">=</span> <a href="https://numpy.org/doc/2.3/" class="yellow">"NumPy documentation"</a></span>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple">self</span>.docs_torch <span class="pink">=</span> <a href="https://docs.pytorch.org/docs/stable/index.html" class="yellow">"PyTorch documentation"</a></span>
     <span class="line">&nbsp;</span>
-    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// C/C++</span></span>
-    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;learn_cpp<span class="pink">:</span> <a href="https://www.learncpp.com/" class="yellow">"Learn C++"</a>,</span>
-    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;docs_cpp<span class="pink">:</span> <a href="https://cppreference.com/" class="yellow">"C++ reference"</a>,</span>
     <span class="line">&nbsp;</span>
-    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Rust</span></span>
-    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;tour_rust<span class="pink">:</span> <a href="https://www.learncpp.com/" class="yellow">"Tour of Rust"</a>,</span>
+    <span class="line"><span class="pink">struct</span> <span class="cyan">RustResources</span> {</span>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Learning</span></span>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;tour_rust<span class="pink">:</span> <a href="https://tourofrust.com/" class="yellow">"Tour of Rust"</a>,</span>
     <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;learn_rust<span class="pink">:</span> <a href="https://rust-book.cs.brown.edu/" class="yellow">"The Rust Programming Language: Experimental Edition"</a>,</span>
-    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;pngme<span class="pink">:</span> <a href="https://jrdngr.github.io/pngme_book/introduction.html" class="yellow">"PNGme"</a>, <span class="comment">// a guided beginner Rust project</span></span>
+    <span class="line">&nbsp;</span>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Documentation</span></span>
     <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;docs_rust<span class="pink">:</span> <a href="https://doc.rust-lang.org/std/index.html" class="yellow">"The Rust Standard Library"</a>,</span>
     <span class="line">&nbsp;</span>
-    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Theory</span></span>
-    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;learn_graphics<span class="pink">:</span> <a href="https://gabrielgambetta.com/computer-graphics-from-scratch/" class="yellow">"Computer Graphics from Scratch"</a>,</span>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Projects</span></span>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;pngme<span class="pink">:</span> <a href="https://jrdngr.github.io/pngme_book/introduction.html" class="yellow">"PNGme"</a>, <span class="comment">// a guided beginner Rust project</span></span>
     <span class="line">}</span>
     <span class="line">&nbsp;</span>
   </div>
